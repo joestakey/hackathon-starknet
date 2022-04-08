@@ -8,8 +8,14 @@
 # testing
 /coverage
 
+#sensitive information
+.env
+
 # production
 /build
+/artifacts
+/src
+keys.js
 
 # misc
 .DS_Store

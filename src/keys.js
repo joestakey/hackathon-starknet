@@ -1,4 +1,0 @@
-export const aws = {
-  AWS_ACCESS_KEY_ID : 'AKIAZI25RCTUZNPWQXME',
-  AWS_SECRET_ACCESS_KEY : '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'
-  }

@@ -14,7 +14,6 @@ import {
   UploadText,
 } from './UploadElements';
 import { ButtonIn } from '../ButtonElements';
-import { aws } from '../../keys.js';
 
 import { Upload as UploadAWS } from '@aws-sdk/lib-storage';
 import { S3Client } from '@aws-sdk/client-s3';
@@ -23,8 +22,8 @@ window.Buffer = window.Buffer || require('buffer').Buffer;
 const Upload = () => {
 
   const creds = {
-    accessKeyId: aws.AWS_ACCESS_KEY_ID,
-    secretAccessKey: aws.AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
   };
 
   const initialFormData = {
